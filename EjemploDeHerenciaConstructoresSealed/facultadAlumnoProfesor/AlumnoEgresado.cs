@@ -5,9 +5,8 @@ using System.Text;
 
 namespace facultadAlumnoProfesor
 {
-    class AlumnoEgresado:Alumno
+   public sealed class AlumnoEgresado:Alumno
     {
-
         private DateTime _fechaDeEgreso;
 
         public DateTime FechaDeEgreso
@@ -31,6 +30,11 @@ namespace facultadAlumnoProfesor
             : base(alumnoQueEgreso,alumnoQueEgreso.Legajo)
         {
             this._fechaDeEgreso = fechaQueEgreso;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString()+" fecha de egreso:"+ this._fechaDeEgreso;
         }
 
     }

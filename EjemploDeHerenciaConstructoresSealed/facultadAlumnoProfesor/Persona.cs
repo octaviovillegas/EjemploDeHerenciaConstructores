@@ -5,7 +5,7 @@ using System.Text;
 
 namespace facultadAlumnoProfesor
 {
-    class Persona
+    public  class Persona
     {
         protected string _nombre;
         protected int _edad;
@@ -39,6 +39,10 @@ namespace facultadAlumnoProfesor
         {
             this._nombre = nombre;
             this._edad = edad;
+        }
+        public override string ToString()
+        {
+            return " nombre:"+ this.Nombre + " edad:"+this._edad;
         }
 
       

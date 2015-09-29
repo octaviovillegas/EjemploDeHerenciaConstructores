@@ -5,7 +5,7 @@ using System.Text;
 
 namespace facultadAlumnoProfesor
 {
-    class Alumno:Persona
+   public class Alumno:Persona
     {
         protected int _legajo;
 
@@ -26,6 +26,10 @@ namespace facultadAlumnoProfesor
           {
 
               this._legajo = legajo;
+          }
+          public override string ToString()
+          {
+              return base.ToString()+" legajo:"+this._legajo;
           }
       
     }
