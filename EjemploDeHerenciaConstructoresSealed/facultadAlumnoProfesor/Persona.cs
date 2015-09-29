@@ -5,9 +5,9 @@ using System.Text;
 
 namespace facultadAlumnoProfesor
 {
-    public  class Persona
+    public   class Persona
     {
-        protected string _nombre;
+        private string _nombre;
         protected int _edad;
 
         public string Nombre
@@ -44,7 +44,7 @@ namespace facultadAlumnoProfesor
         {
             return " nombre:"+ this.Nombre + " edad:"+this._edad;
         }
-
+       
       
     }
 }

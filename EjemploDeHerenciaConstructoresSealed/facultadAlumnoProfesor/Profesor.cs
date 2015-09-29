@@ -12,6 +12,7 @@ namespace facultadAlumnoProfesor
         public Profesor(Persona PersonaParametro, int legajo):base(PersonaParametro.Nombre,PersonaParametro.Edad)
         {
             this._legajoDocente = legajo;
+            
         }
     }
 }

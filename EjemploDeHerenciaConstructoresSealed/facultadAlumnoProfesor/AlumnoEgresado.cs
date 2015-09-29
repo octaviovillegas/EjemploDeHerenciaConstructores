@@ -11,9 +11,15 @@ namespace facultadAlumnoProfesor
 
         public DateTime FechaDeEgreso
         {
-            get { return this._fechaDeEgreso;  }
+            get { return  this._fechaDeEgreso;  }
             set { this._fechaDeEgreso = value; }
         
+        }
+
+
+        public void mostrar()
+        {
+            Console.WriteLine(base._legajo);
         }
         public AlumnoEgresado( DateTime fechaparam,int edad, int legajo, string nombre)
             : base(edad,legajo,nombre)

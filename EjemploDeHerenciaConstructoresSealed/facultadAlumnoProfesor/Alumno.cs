@@ -27,10 +27,7 @@ namespace facultadAlumnoProfesor
 
               this._legajo = legajo;
           }
-          public override string ToString()
-          {
-              return base.ToString()+" legajo:"+this._legajo;
-          }
+       
       
     }
 }

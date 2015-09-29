@@ -19,9 +19,6 @@ namespace facultadAlumnoProfesor
             //AlumnoEgresado objetoAlumnoEgresado = new AlumnoEgresado(objetoAlumo, fechaEgreso);
             AlumnoEgresado objetoAlumnoEgresado = new AlumnoEgresado(new Alumno(22,8888," alumnoEgresado"),DateTime.Now);
             Profesor objetoProfesor = new Profesor(new Persona("profesor",55), 999);
-
-
-
             Persona[] conjuntoDePersonas= new Persona[4];
             conjuntoDePersonas[0] = objetoPersona;
             conjuntoDePersonas[1] = objetoAlumo;
